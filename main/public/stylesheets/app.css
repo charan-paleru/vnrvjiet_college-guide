@@ -1,0 +1,49 @@
+.container.main{
+	margin-top:7.0em;
+}
+#delete{
+	display:inline;
+}
+body{
+           background-position: center;
+        background-size: cover;
+          background-image: url("https://images.unsplash.com/photo-1589306972979-9ab767b48fc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+        }
+.ui.huge.header.hide{
+        font-family: 'Rajdhani', sans-serif;
+        color:white;
+	font-size: 3rem;
+}
+
+/* naya vaala  */
+ #mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: powderblue;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}

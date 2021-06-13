@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+<div class="ui main text container">
+	<div class="ui huge header hide text-center">Guides</div>
+	<p>
+	<h4 class="popo text-center">Post your Class Guides for everyone !</h4>
+	</p>
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+			<% guides.forEach(function(guide){ %>
+			<div class="item">
+				<div class="image">
+					<img src="<%= guide.image %>">
+				</div>
+				<div class="content">
+					<a class="header" href="/home/guides/<%=guide._id%>"><%= guide.rno %></a>
+					<div class="meta">
+						<span> <%= guide.created.toDateString() %></span>
+					</div>
+					<div class="description">
+						<p><%= guide.dept %></p>
+						<p><%= guide.faculty %></p>
+						<p> <%- guide.body.substring(0,20)%>...</p>
+					</div>
+					<p>  </p>
+					<div class="extras">
+						<a class="ui small floated  blue button" href="/home/guides/<%=guide._id%>">
+							Read more
+						</a>
+					</div>
+				</div>
+			</div>
+				<% }) %>
+			
+		</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>
+	

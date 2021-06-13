@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+<div class="ui huge header">Edit <%= guide.rno %></div>	
+	<form class="ui form" action="/home/guides/<%=guide._id%>?_method=PUT" method="POST">
+		<div class="field">
+			<label>Room number</label>
+			<input type="text" name="guide[rno]" value="<%=guide.rno%>">
+		</div>
+		<div class="field">
+			<label>Department name</label>
+			<input type="text" name="guide[dept]" value="<%=guide.dept%>">
+		</div>
+		<div class="field">
+			<label>Faculty name</label>
+			<input type="text" name="guide[faculty]" value="<%=guide.faculty%>">
+		</div>
+		<div class="field">
+			<label>Timetable</label>
+			<input type="text" name="guide[image]" value="<%=guide.image%>">
+		</div>
+		<div class="field">
+			<label>Description</label>
+			<textarea name="guide[body]"><%=guide.body%></textarea>
+		</div>
+		<input class="ui blue basic button" type="submit">
+	</form>
+</div>
+<%- include("partials/footer") %>

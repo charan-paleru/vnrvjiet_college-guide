@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+	  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Exo+2:wght@600&family=Russo+One&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>CG Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+		.ui.center.aligned.header{
+			color:white;
+		}
+		.large.teal.submit.button{
+			font-family: 'Exo 2', sans-serif;
+			font-size:1.25rem;
+			
+		}
+     body{
+           background-position: center;
+        background-size: cover;
+             background-image: url("https://directlinedev.com/media/services/service/background/background_16.wide.jpeg");
+  
+        }
+		.ui.message{
+			font-family: 'Abel', sans-serif;
+			font-size:1.25rem;
+		}
+	.ui.grid {
+        height: 100%;
+      }
+
+      .column {
+        max-width: 450px;
+      }
+    </style>
+  </head>
+
+  <body id="root">
+    <div class="ui middle aligned center aligned grid">
+      <div class="column">
+      
+			<img src="https://i.imgur.com/y37W97r.png" height="110px" width="110px">  
+
+    
+		  <div class=" main text container segment">
+       <form class="ui form " action="/" method="POST">
+          <div class="ui stacked segment">
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input name="username" placeholder="Username" type="text" />
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                <input name="password" placeholder="Password" type="password" />
+              </div>
+            </div>
+            <div class="ui fluid large teal submit button">L o g i n</div>
+          </div>
+          <div class="ui error message"></div>
+        </form>
+        <div class="ui message"><strong>New  &nbsp;to  &nbsp;College  &nbsp;Guide ? </strong><a href="/register">&nbsp; <strong>Sign Up</strong></a></div>
+      </div>
+		</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".ui.form").form({
+          fields: {
+            password: {
+              identifier: "password",
+              rules: [
+                {
+                  type: "empty",
+                  prompt: "Please enter your password"
+                },
+              ]
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

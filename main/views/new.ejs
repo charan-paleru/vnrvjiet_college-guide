@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+<div class="ui huge header">New guide</div>	
+	<form class="ui form" action="/home/guides" method="POST">
+		<div class="field">
+			<label>Room number</label>
+			<input type="text" name="guide[rno]" placeholder="Room number">
+		</div>
+		<div class="field">
+			<label>Department name</label>
+			<input type="text" name="guide[dept]" placeholder="Department">
+		</div>
+		<div class="field">
+			<label>Faculty name</label>
+			<input type="text" name="guide[faculty]" placeholder="Faculty name">
+		</div>
+		<div class="field">
+			<label>Timetable (Enter image address)</label>
+			<input type="text" name="guide[image]" placeholder="Time-table/images">
+		</div>
+		<div class="field">
+			<label>Description</label>
+			<textarea name="guide[body]"></textarea>
+		</div>
+		<input class="ui blue basic button" type="submit">
+	</form>
+</div>
+<%- include("partials/footer") %>

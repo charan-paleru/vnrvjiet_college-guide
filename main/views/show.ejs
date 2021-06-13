@@ -1,0 +1,41 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment mb-5">
+<div class="ui huge header"><%=guide.rno%></div>	
+	<div class="ui top attached">
+		<div class="item">
+			<p><%= guide.dept %></p>
+		</div>
+		<p>
+			
+		</p>
+		<div class="item">
+			<p><%= guide.faculty %></p>
+		</div>
+		<p>
+			
+		</p>
+		<div class="item">
+			<img class="ui centered rounded image" src="<%= guide.image %>">
+			<p>
+				
+			</p>
+			<div class="content">
+				<span> <%= guide.created.toDateString()%></span>
+			</div>
+			<p>
+				
+			</p>
+			<div class="description">
+				<p> <%= guide.body %></p>
+			</div>
+			<p>
+				
+			</p>
+			<a class="ui green tiny basic button" href="/home/guides/<%=guide._id%>/edit">Edit</a>
+			<form id="delete" action="/home/guides/<%=guide._id%>?_method=DELETE" method="POST">
+				<button class="ui tiny red basic button"> Delete</button>
+			</form>
+		</div>
+	</div>
+</div>
+<%- include("partials/footer") %>

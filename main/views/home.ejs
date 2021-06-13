@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <style>
+      #mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+/* ok 00 */
+#mainNavbar .nav-link {
+    color: white;
+}
+/* ok 00*/
+#mainNavbar .nav-link:hover {
+    color: powderblue;
+}
+/* ok 00*/
+#mainNavbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+/* ok */
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+/* .navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+} */
+      .lead{
+        font-family: 'Poppins', sans-serif;
+        color:white;
+      }
+      .so{
+        font-family: 'Staatliches', cursive;
+      }
+      .hide{
+        font-family: 'Kaushan Script', cursive;
+        color:white;
+      }
+        #header {
+            background: url("imgs/header.jpeg");
+        }
+        .headin{
+           background-position: center;
+        background-size: cover;
+          background-image: url("https://images.unsplash.com/photo-1589306972979-9ab767b48fc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+        }
+  
+        body{
+        	background: ghostwhite;
+        }
+        .card{
+        background: snow;
+      }
+
+    </style>
+
+    <title>CG homepage</title>
+</head>
+
+<body>
+   <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand"><img src="https://i.imgur.com/y37W97r.png" height="60px" width="60px"></a>
+			<a href="/home/about" class="navbar-brand">About</a>
+			<a href="/home/logout" class="navbar-brand">Logout</a>
+    </nav>
+
+  <div class="headin">
+    <section id="header" class="jumbotron cols text-center">
+        <h1 class="display-3 hide pt-4">VNR College guide</h1>
+        <p class="lead pt-5"><strong>College guide gets you goin'</strong></p>
+        <a href="/home/guides" class="btn btn-outline-light">GUIDE <i class="pl-1 fas fa-pencil-alt"></i></i></a>
+    </section>
+  </div>
+
+    <section id="contents">
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                	<div class="shadow p-0 mb-5 bg-white rounded">
+                   <div class="card">
+                        <img class="card-img-top" src="imgs/pattern2.jpeg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Student activity center</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Fests</li>
+                                    <li>Clubs</li>
+                                    <li>Events</li>
+                                </ul>
+                            </p>
+                            <a href="/home/sac" class="btn btn-outline-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                	<div class="shadow p-0 mb-5 bg-white rounded">
+                   <div class="card">
+                        <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Most visited</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>College hotspots</li>
+                                    <li>Places of interest</li>
+                                    <li>FAQs</li>
+                                </ul>
+                              </p>
+                            <a href="/home/manage" class="btn btn-outline-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+                	<div class="shadow p-0 mb-5 bg-white rounded">
+                    <div class="card">
+                        <img class="card-img-top" src="imgs/pattern3.jpeg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports complex</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Sports</li>
+                                    <li>Games</li>
+                                    <li>GYM</li>
+                                </ul>
+                            </p>
+                            <a href="/home/sports" class="btn btn-outline-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- javaScript fieles -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
