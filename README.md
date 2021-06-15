@@ -40,4 +40,5 @@ our project is a simple website with lots of front-end and only a single databas
   all the pages in the website are connected by routes.
   
   HOPE YOU LIKED OUR PROJECT !!!!!
+  
   Have a good day ;)
